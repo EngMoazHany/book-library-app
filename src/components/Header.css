@@ -1,0 +1,35 @@
+.nav {
+  background-color: #1e293b;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #10b981;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-weight: bold;
+  color: #ccc;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #0ea5e9;
+}
+.logo {
+  font-size: 1.5rem;
+  color: #10b981;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #0ea5e9;
+  transition: 0.3s ease;
+}
