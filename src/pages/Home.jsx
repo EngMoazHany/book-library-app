@@ -10,7 +10,7 @@ const Home = () => {
   const fetchBooks = async () => {
     try {
       const res = await axios.get(`https://openlibrary.org/search.json?q=${query}`);
-      setBooks(res.data.docs.slice(0, 15)); // نعرض أول 12 كتاب
+      setBooks(res.data.docs.slice(0, 12)); // أول 12 كتاب
     } catch (error) {
       console.error('Error fetching books:', error);
     }
@@ -18,6 +18,7 @@ const Home = () => {
 
   useEffect(() => {
     fetchBooks();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleSearch = (e) => {
