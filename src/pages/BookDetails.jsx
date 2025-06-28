@@ -4,7 +4,7 @@ import axios from 'axios';
 import './BookDetails.css';
 
 const BookDetails = () => {
-  const { id } = useParams(); // OLxxxxW
+  const { id } = useParams(); 
   const [book, setBook] = useState(null);
   const [isFavorite, setIsFavorite] = useState(false);
 
