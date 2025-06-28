@@ -7,13 +7,13 @@ const Home = () => {
   const [books, setBooks] = useState([]);
   const [query, setQuery] = useState('AI');
 
-     
+
   const handleSearch = (e) => {
     e.preventDefault();
     fetchBooks(query);
   };
 
-  
+ 
   const fetchBooks = async (searchQuery) => {
     try {
       const res = await axios.get(`https://openlibrary.org/search.json?q=${searchQuery}`);
@@ -23,11 +23,10 @@ const Home = () => {
     }
   };
 
-
+ 
   useEffect(() => {
     fetchBooks(query);
-     
-  }, []);
+  }, [query]);
 
   return (
     <div className="home">
