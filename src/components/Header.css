@@ -1,35 +1,33 @@
 .nav {
-  background-color: #1e293b;
+  background-color: rgba(0, 0, 0, 0.6); /* شفافية خفيفة فوق الصورة */
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-.logo {
-  font-size: 1.5rem;
-  color: #10b981;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav a {
   margin-left: 1.5rem;
   font-weight: bold;
-  color: #ccc;
+  color: #f1f5f9; /* بدل #ccc */
   transition: all 0.3s ease;
 }
 
 nav a:hover {
   color: #0ea5e9;
 }
+
 .logo {
   font-size: 1.5rem;
-  color: #10b981;
+  color: #22c55e;
   font-weight: bold;
   text-decoration: none;
 }
 
 .logo:hover {
   color: #0ea5e9;
-  transition: 0.3s ease;
 }
