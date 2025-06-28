@@ -7,6 +7,7 @@ import BookDetails from './components/BookDetails';
 import Favorites from './pages/Favorites';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
+import Footer from './components/Footer'; // ✅ أضفنا Footer هنا
 import './App.css';
 
 function AppWrapper() {
@@ -28,6 +29,8 @@ function AppWrapper() {
           <Route path="/favorites" element={<Favorites />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+
+        <Footer /> {/* ✅ هنا أضفنا الـ Footer بعد الـ Routes */}
       </div>
     </div>
   );

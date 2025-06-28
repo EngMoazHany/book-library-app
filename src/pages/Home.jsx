@@ -10,7 +10,7 @@ const Home = () => {
   const fetchBooks = async () => {
     try {
       const res = await axios.get(`https://openlibrary.org/search.json?q=${query}`);
-      setBooks(res.data.docs.slice(0, 100)); // نعرض أول 12 كتاب
+      setBooks(res.data.docs.slice(0, 15)); // نعرض أول 12 كتاب
     } catch (error) {
       console.error('Error fetching books:', error);
     }
