@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 const BookDetails = () => {
-  const { id } = useParams(); // OLxxxxW
+  const { id } = useParams(); 
   const [book, setBook] = useState(null);
   const [isFavorite, setIsFavorite] = useState(false);
 

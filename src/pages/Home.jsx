@@ -5,12 +5,12 @@ import './Home.css';
 
 const Home = () => {
   const [books, setBooks] = useState([]);
-  const [query, setQuery] = useState('react');
+  const [query, setQuery] = useState('AI');
 
   const fetchBooks = async () => {
     try {
       const res = await axios.get(`https://openlibrary.org/search.json?q=${query}`);
-      setBooks(res.data.docs.slice(0, 12)); // أول 12 كتاب
+      setBooks(res.data.docs.slice(0, 12)); 
     } catch (error) {
       console.error('Error fetching books:', error);
     }
@@ -18,7 +18,7 @@ const Home = () => {
 
   useEffect(() => {
     fetchBooks();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  
   }, []);
 
   const handleSearch = (e) => {
