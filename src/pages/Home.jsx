@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import BookCard from '../components/BookCard';
 import './Home.css';
@@ -7,19 +7,19 @@ const Home = () => {
   const [books, setBooks] = useState([]);
   const [query, setQuery] = useState('AI');
 
-  const fetchBooks = async () => {
+
+  const fetchBooks = useCallback(async () => {
     try {
       const res = await axios.get(`https://openlibrary.org/search.json?q=${query}`);
-      setBooks(res.data.docs.slice(0, 12)); 
+      setBooks(res.data.docs.slice(0, 12));
     } catch (error) {
       console.error('Error fetching books:', error);
     }
-  };
+  }, [query]); 
 
   useEffect(() => {
     fetchBooks();
-  
-  }, []);
+  }, [fetchBooks]);
 
   const handleSearch = (e) => {
     e.preventDefault();
