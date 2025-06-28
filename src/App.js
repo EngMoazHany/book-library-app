@@ -1,4 +1,4 @@
-// ✅ App.js – React Router + Dynamic Background Color + Layout Wrapper (Vanilla CSS version)
+
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
@@ -7,7 +7,7 @@ import BookDetails from './components/BookDetails';
 import Favorites from './pages/Favorites';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
-import Footer from './components/Footer'; // ✅ أضفنا Footer هنا
+import Footer from './components/Footer';    
 import './App.css';
 
 function AppWrapper() {
@@ -30,7 +30,7 @@ function AppWrapper() {
           <Route path="*" element={<NotFound />} />
         </Routes>
 
-        <Footer /> {/* ✅ هنا أضفنا الـ Footer بعد الـ Routes */}
+        <Footer /> {/*  */}
       </div>
     </div>
   );

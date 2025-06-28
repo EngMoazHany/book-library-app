@@ -1,5 +1,5 @@
 .nav {
-  background-color: rgba(0, 0, 0, 0.6); /* شفافية خفيفة فوق الصورة */
+  background-color: rgba(0, 0, 0, 0.6); 
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -13,7 +13,7 @@
 nav a {
   margin-left: 1.5rem;
   font-weight: bold;
-  color: #f1f5f9; /* بدل #ccc */
+  color: #f1f5f9; 
   transition: all 0.3s ease;
 }
 

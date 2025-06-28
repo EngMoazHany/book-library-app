@@ -7,13 +7,13 @@ const Home = () => {
   const [books, setBooks] = useState([]);
   const [query, setQuery] = useState('AI');
 
-  // ✅ دالة البحث
+     
   const handleSearch = (e) => {
     e.preventDefault();
     fetchBooks(query);
   };
 
-  // ✅ تحميل الكتب من API
+  
   const fetchBooks = async (searchQuery) => {
     try {
       const res = await axios.get(`https://openlibrary.org/search.json?q=${searchQuery}`);
@@ -23,10 +23,10 @@ const Home = () => {
     }
   };
 
-  // ✅ تنفيذ مرة واحدة عند تحميل الصفحة
+
   useEffect(() => {
     fetchBooks(query);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+     
   }, []);
 
   return (
