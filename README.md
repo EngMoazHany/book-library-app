@@ -1,36 +1,65 @@
 # 📚 Book Library App
 
-A modern React web application that allows users to search for books using the OpenLibrary API, view detailed book information, and save favorites. The app features a clean dark UI with neon styling, smooth transitions, and responsive design.
+An elegant and interactive book search web application built with **React**. Users can search for books, view detailed information, and save their favorite reads – all with a sleek, modern UI inspired by real libraries.
 
----
+🔗 **Live Demo:** [http://moaz-book-library.netlify.app](http://moaz-book-library.netlify.app)
 
-## 🚀 Features
+## 🔍 Features
 
-- 🔍 **Live Search** – Search for books by title or author using OpenLibrary
-- 📖 **Book Details** – See descriptions and subjects for each book
-- ❤️ **Favorites System** – Add/remove books to/from favorites (stored in localStorage)
-- 🌙 **Dark Mode** – Modern dark-themed UI with glowing buttons and hover effects
-- 🔗 **Routing** – Navigate between Home, Book Details, Favorites, and Not Found pages
+- 🔎 Live book search powered by OpenLibrary API  
+- 📖 Detailed book pages with cover, author, and publish year  
+- 💖 Favorite books section saved with local storage  
+- 📬 Contact form with Formspree integration  
+- ⚡ Fully responsive on mobile and desktop  
+ 
 
----
+## 🛠️ Tech Stack
 
-## 🛠️ Built With
+- **Frontend:** React, React Router, Axios  
+- **Styling:** Custom CSS  
+- **API:** [OpenLibrary API](https://openlibrary.org/developers/api)  
+- **Forms:** [Formspree](https://formspree.io/)  
+- **Deployment:** Netlify  
+- **Version Control:** Git + GitHub  
 
-- **React** (CRA)
-- **OpenLibrary API**
-- **Vanilla CSS** (Custom dark UI)
-- **React Router DOM**
-- **Axios**
-- **LocalStorage** (for favorites)
 
----
 
-## 📦 Installation
+## 🚀 Getting Started
 
-To run the project locally:
+1. **Clone the repository:**
 
 ```bash
 git clone https://github.com/EngMoazHany/book-library-app.git
 cd book-library-app
+```
+
+2. **Install dependencies:**
+
+```bash
 npm install
+```
+
+3. **Run the app locally:**
+
+```bash
 npm start
+```
+
+4. **Build for production:**
+
+```bash
+npm run build
+```
+
+## 🌐 Live Preview
+
+Visit the deployed site here:  
+👉 [http://moaz-book-library.netlify.app](http://moaz-book-library.netlify.app)
+
+## 📬 Contact
+
+
+
+- 📧 Email: moazhany27@gmail.com  
+- 💻 GitHub: [github.com/EngMoazHany](https://github.com/EngMoazHany)  
+- 🔗 LinkedIn: [linkedin.com/in/moazhany27](https://linkedin.com/in/moazhany27)
